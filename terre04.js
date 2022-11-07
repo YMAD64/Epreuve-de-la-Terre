@@ -9,8 +9,6 @@ else if(argsString%2===0){
 }
 else if(argsString%2===1){
     console.log("impair");
-}
-else if(argsString%2===-1){
-    console.log("impair");
+
 }
 else console.log("Tu ne me la mettras pas à l'envers"); 

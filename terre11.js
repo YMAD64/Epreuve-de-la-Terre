@@ -17,7 +17,12 @@ else if(argsString.charAt(2)!= ':'){console.log("ERREUR ! Veuillez entrer l'heur
 }
 else if(isNaN(heure)===true || isNaN(minute)===true){console.log("ERREUR ! Veuillez entrer l'heure sous la forme HH:MM");
 }
-
+else if(heure == 00 && minute == 00){
+    console.log("12:00AM");
+}
+else if(heure == 12 && minute == 00){
+    console.log("12:00PM");
+}
 else if(heure >= 12){
     let nheure = heure - 12
     console.log(`${nheure}:${minute}PM`);
