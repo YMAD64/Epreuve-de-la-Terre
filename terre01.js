@@ -1,7 +1,27 @@
-let nom = process.argv[1]
-let newnom = ""
 
-for(let i = 45 ; i<= nom.length ; i++){
-   newnom = newnom + nom.charAt(i)
+
+
+// 1 FONCTION
+
+function afficherNomFichier(cheminBrut, nomFichier){
+   for (i = 45 ; i <= cheminBrut.length ; i++) {
+       nomFichier = nomFichier + cheminBrut.charAt(i);
+   }
+   console.log(nomFichier);   
 }
-console.log(newnom);
+ 
+
+// 2 GESTIOON ERREUR
+
+
+
+// 3 PASSING
+
+let cheminBrut = process.argv[1]
+let nomFichier = ""
+
+// 4 RESOLUTION
+
+afficherNomFichier(cheminBrut, nomFichier)
+
+// 5  RESULTAT
