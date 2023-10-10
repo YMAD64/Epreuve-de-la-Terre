@@ -25,3 +25,25 @@ else console.log("Pas triée !");
 // // console.log(nombre1);
 // console.log(nombre2);
 // console.log(nombre3);
+
+///////////////////////////////////////////////////////
+//10/10/23//
+
+//const args = process.argv.slice(2)
+//console.log(args);
+
+function trié(array){
+    for (let i=0 ; i<array.length ; i++){
+        if(parseInt(array[i])>parseInt(array[i+1])){
+        return false
+        } 
+        
+    } return true
+}
+
+if(trié(args)){
+    console.log("Triée !");
+}
+else{
+    console.log("Pas triée !");
+}
